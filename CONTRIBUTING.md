@@ -13,6 +13,17 @@
 * Files MUST NOT have an ending ?> tag.
 * Code MUST use namespaces.
 * Strings SHOULD use the double quote " except when the single quote is required.
+* The header of new PHP Files must include:
+
+```php
+/**
+ * Pickle (c) 2020
+ * This project is licensed under GNU LESSER GENERAL PUBLIC LICENSE v3.0
+ * It is free to use, and copyright free.
+ * 
+ * @author <authorName>
+ */
+```
 
 ⇁ Before you start making your contributions, we suggest that you read:
 

@@ -1,0 +1,10 @@
+name: Pickle
+main: therealkizu\pickle\Pickle
+version: 1.0.0-beta1
+api:
+  - 3.0.0
+
+# Extra
+author: TheRealKizu
+description: A PMMP plugin that aims to enhance vanilla PocketMine-MP!
+website: https://github.com/TheRealKizu/Pickle
