@@ -7,7 +7,7 @@
 <!-- KEY INFORMATION HEADER -->
 ## ⇁ What is Pickle?
 
-* **Pickle** is [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) plugin that enhances the softwares vanilla features!
+* **Pickle** is [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) plugin that enhances the software's vanilla features!
 
 <!-- FEATURES HEADER -->
 ## ⇁ Features
@@ -26,7 +26,7 @@
 <!-- CONTRIBUTING -->
 ## ⇁ Contributing
 
-* If you are a developer and want to add a new feature or a fix a bug on the plugin, please read [CONTRIBUTING.md](CONTRIBUTING.md) before requesting a pull request to us.
+* If you are a developer and want to add a new feature or a bug fix for the plugin, please read [CONTRIBUTING.md](CONTRIBUTING.md) before requesting a pull request to us.
 
 <!-- LICENSE -->
 ## ⇁ License

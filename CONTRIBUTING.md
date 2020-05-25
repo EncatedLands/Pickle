@@ -2,7 +2,7 @@
 # ★ Contributing Guidelines
 
 <!-- CODE SYNTAX HEADER -->
-## Code Syntax
+## ⇁ Code Syntax
 
 ⇁ Your code must follow [PSR-2](http://www.php-fig.org/psr/psr-2/) but with a few exceptions.
 
