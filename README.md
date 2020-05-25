@@ -4,6 +4,9 @@
 <!-- LOGO -->
 <img align="right" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/2/20/Sea_Pickle_1_JE1_BE1.png" width=30%>
 
+<!-- BADGES -->
+[![LICENSE](https://img.shields.io/github/license/TheRealKizu/Pickle.svg?style=flat-square)](https://github.com/TheRealKizu/Pickleblob/master/LICENSE) 
+
 <!-- KEY INFORMATION HEADER -->
 ## ⇁ What is Pickle?
 
