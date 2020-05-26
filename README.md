@@ -18,6 +18,7 @@
 * 100% Configurable
 * Multi-Language System
 * Vanilla PMMP Enhancer
+* Full list of features can be found on the [wiki](https://github.com/TheRealKizu/Pickle/wiki)
 
 <!-- INSTALLATION -->
 ## ⇁ Installation
