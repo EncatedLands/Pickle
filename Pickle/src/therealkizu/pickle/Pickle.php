@@ -19,6 +19,8 @@ class Pickle extends PluginBase {
 
     /** @var Config $config */
     public $config;
+    /** @var Config $lang */
+    public $lang;
 
     public function onLoad() {
         if (!is_dir($this->getDataFolder())) {
@@ -49,8 +51,18 @@ class Pickle extends PluginBase {
             @mkdir($this->getDataFolder() . "languages/");
         }
 
-        $language = $config->get("language", "en_US");
-        //TODO: Finish this.
+        $language = $config->get("language");
+        if (!is_file($this->getDataFolder() . "languages/${language}.yml")) {
+            if ($this->saveResource($this->getDataFolder() . "languages/${language}.yml")) {
+                $this->getLogger()->error("${language} not found. Reverting to default language...");
+
+                $language = "en_US";
+                $this->saveResource($this->getDataFolder() . "languages/en_US.yml");
+            }
+        }
+
+        $this->lang = new Config($this->getDataFolder() . "languages/${language}.yml", Config::YAML);
+        $this->lang->save();
     }
 
 }
