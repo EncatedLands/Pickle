@@ -2,6 +2,7 @@
 build-by-default: true
 branches:
 - master
+- stable
 projects:
   Pickle:
     path: Pickle/

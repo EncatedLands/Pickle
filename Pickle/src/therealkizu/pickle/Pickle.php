@@ -14,6 +14,7 @@ namespace therealkizu\pickle;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
+use therealkizu\pickle\items\ItemManager;
 
 class Pickle extends PluginBase {
 
@@ -38,6 +39,7 @@ class Pickle extends PluginBase {
         $this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
 
         $this->checkLanguages($this->config);
+        $this->registerManagers();
     }
 
     /**
@@ -63,6 +65,15 @@ class Pickle extends PluginBase {
 
         $this->lang = new Config($this->getDataFolder() . "languages/${language}.yml", Config::YAML);
         $this->lang->save();
+    }
+
+    /**
+     * This registers the Block, Item Managers
+     *
+     * @return void
+     */
+    public function registerManagers(): void {
+        new ItemManager();
     }
 
 }
