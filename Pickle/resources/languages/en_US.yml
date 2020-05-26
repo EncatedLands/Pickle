@@ -6,6 +6,11 @@
 # This project is licensed under GNU LESSER GENERAL PUBLIC LICENSE v3.0
 # It is free to use, and copyright free.
 
-# Messages
+# ----- [MESSAGES] -----
 # You can use & or § for colors
+
+# Core Messages
+language-selected: "Language Selected: en_US (English)"
+
+# Command Messages
 no-permission: "&cYou don't have permission to use this command!"

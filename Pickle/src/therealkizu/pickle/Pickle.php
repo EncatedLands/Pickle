@@ -15,6 +15,7 @@ namespace therealkizu\pickle;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use therealkizu\pickle\items\ItemManager;
+use therealkizu\pickle\utils\Utils;
 
 class Pickle extends PluginBase {
 
@@ -22,6 +23,8 @@ class Pickle extends PluginBase {
     public $config;
     /** @var Config $lang */
     public $lang;
+    /** @var Utils $utils */
+    public $utils;
 
     public function onLoad() {
         if (!is_dir($this->getDataFolder())) {
@@ -37,6 +40,7 @@ class Pickle extends PluginBase {
         $this->getLogger()->info("Pickle is now enabled!");
 
         $this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+        $this->utils = new Utils($this);
 
         $this->checkLanguages($this->config);
         $this->registerManagers();
@@ -65,6 +69,7 @@ class Pickle extends PluginBase {
 
         $this->lang = new Config($this->getDataFolder() . "languages/${language}.yml", Config::YAML);
         $this->lang->save();
+        $this->getLogger()->info($this->utils->translateLang("language-selected"));
     }
 
     /**
