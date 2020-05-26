@@ -35,5 +35,3 @@
 ## ⇁ License
 
 * This project is licensed under `GNU LESSER GENERAL PUBLIC LICENSE`. Check [LICENSE](LICENSE) for more details.
-
-<p align="center"> Layout by @TrackRunny </p>

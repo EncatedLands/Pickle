@@ -17,13 +17,13 @@ use pocketmine\item\Item;
 use pocketmine\item\Potion;
 use pocketmine\block\Block;
 use pocketmine\math\Vector3;
-use pocketmine\item\GlassBottle as BetterGlassBottle;
+use pocketmine\item\GlassBottle as PMGlassBottle;
 
-class GlassBottle extends BetterGlassBottle {
+class GlassBottle extends PMGlassBottle {
   
 	public function onActivate(Player $player, Block $blockReplace, Block $blockClicked, int $face, Vector3 $clickVector): bool {
-		if(in_array($blockClicked->getId(), [Block::STILL_WATER, Block::FLOWING_WATER]) || in_array($blockReplace->getId(), [Block::STILL_WATER, Block::FLOWING_WATER])){
-			if($player->getGamemode() === 0){
+		if (in_array($blockClicked->getId(), [Block::STILL_WATER, Block::FLOWING_WATER]) || in_array($blockReplace->getId(), [Block::STILL_WATER, Block::FLOWING_WATER])){
+			if ($player->getGamemode() === 0){
 				$this->count--;
 			}
 			$player->getInventory()->addItem(Item::get(Item::POTION, Potion::WATER, 1)); 
@@ -31,7 +31,6 @@ class GlassBottle extends BetterGlassBottle {
 		}
 
 		return true;
-		
 	}
 	
  }

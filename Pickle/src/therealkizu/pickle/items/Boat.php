@@ -31,7 +31,7 @@ class Boat extends Item {
 	public function getMaxStackSize() : int{
 		return 64;
 	}
-  // Work in progress...
+
 	public function onActivate(Player $player, Block $blockReplace, Block $blockClicked, int $face, Vector3 $clickVector) : bool {
 		$nbt = Entity::createBaseNBT($blockReplace->add(0.5, 0, 0.5));
 		$nbt->setInt("Variant", $this->getDamage());
