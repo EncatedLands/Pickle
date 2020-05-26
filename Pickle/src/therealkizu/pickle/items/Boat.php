@@ -1,23 +1,22 @@
 <?php
 
- /**
+/**
  * Pickle (c) 2020
  * This project is licensed under GNU LESSER GENERAL PUBLIC LICENSE v3.0
  * It is free to use, and copyright free.
  *
- * @author TheRealKizu
+ * @author EncatedLands
  */
 
 declare(strict_types=1);
 
-namespace therealkizu\pickle\Items;
+namespace therealkizu\pickle\items;
 
 use pocketmine\Player;
 use pocketmine\entity\Entity;
 use pocketmine\block\Block;
 use pocketmine\math\Vector3; 
 use pocketmine\item\Item;
-use therealkizu\pickle\Pickle;
 
 class Boat extends Item {
   
