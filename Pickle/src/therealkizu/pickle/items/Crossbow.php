@@ -48,7 +48,7 @@ class Crossbow extends Tool {
 			return true;
 		}
 
-		if ($player->getGamemode() === 0 and !$player->getInventory()->contains(ItemFactory::get(Item::ARROW, 0, 2))){
+		if ($player->getGamemode() === 0 and $player->getGamemode() === 0 and !$player->getInventory()->contains(ItemFactory::get(Item::ARROW, 0, 2))){
 			$player->getInventory()->sendContents($player);
 			return false;
 		}
