@@ -15,13 +15,6 @@ namespace therealkizu\pickle\items;
 use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
 
-use therealkizu\pickle\items\Boat;
-use therealkizu\pickle\items\Crossbow;
-use therealkizu\pickle\items\Minecart;
-use therealkizu\pickle\items\Shield; 
-use therealkizu\pickle\items\Elytra; 
-use therealkizu\pickle\items\GlassBottle;
-
 class ItemManager {
 
     public function __construct() {

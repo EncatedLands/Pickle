@@ -72,6 +72,7 @@ class Crossbow extends Tool {
         if ($tag == null){
             return false;
         }
+
         if ($tag->getInt("loadedCrossbowTime") > time()){
             return false;
         }
