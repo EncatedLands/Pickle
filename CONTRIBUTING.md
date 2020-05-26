@@ -8,7 +8,7 @@
 
 * Opening braces **MUST** go on the same line, and MUST have a space before.
 * `else if` **MUST** be written as elseif
-* Control structure keywords or opening braces **MUST NOT** have spaces before or after them.
+* Code **MUST** use tabs for indenting
 * Files **MUST** use only the <?php tag.
 * Files **MUST NOT** have an ending ?> tag.
 * Code **MUST** use namespaces.
