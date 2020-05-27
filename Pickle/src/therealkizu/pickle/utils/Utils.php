@@ -17,8 +17,6 @@ class Utils {
 
     /** @var Pickle $pickle */
     private $pickle;
-    /** @var array $languages */
-    public static $languages = [];
 
     public function __construct(Pickle $pickle) {
         $this->pickle = $pickle;
@@ -38,15 +36,11 @@ class Utils {
         }
 
         $language = $config->get("language");
-        foreach (glob($this->pickle->getDataFolder() . "languages/*.yml") as $langResource) {
-            self::$languages[basename($langResource, ".yml")] = yaml_parse_file($langResource);
-        }
-
-        if (!isset(self::$languages[$language])) {
+        if (!is_file($this->pickle->getDataFolder() . "languages/${language}.yml")) {
             if ($this->pickle->saveResource($this->pickle->getDataFolder() . "languages/${language}.yml")) {
                 $this->pickle->getLogger()->error("${language} not found. Reverting to default language...");
 
-                self::$languages = "en_US";
+                $language = "en_US";
                 $this->pickle->saveResource($this->pickle->getDataFolder() . "languages/en_US.yml");
             }
         }
