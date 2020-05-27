@@ -36,16 +36,16 @@ class Utils {
         }
 
         $language = $config->get("language");
-        if (!is_file($this->pickle->getDataFolder() . "languages/${language}.yml")) {
-            if ($this->pickle->saveResource($this->pickle->getDataFolder() . "languages/${language}.yml")) {
-                $this->pickle->getLogger()->error("${language} not found. Reverting to default language...");
+        if (!is_file($this->pickle->getDataFolder() . "languages/{$language}.yml")) {
+            if ($this->pickle->saveResource("languages/{$language}.yml")) {
+                $this->pickle->getLogger()->warning("{$language} not found. Reverting to default language...");
 
                 $language = "en_US";
-                $this->pickle->saveResource($this->pickle->getDataFolder() . "languages/en_US.yml");
+                $this->pickle->saveResource("languages/en_US.yml");
             }
         }
 
-        $this->pickle->lang = new Config($this->pickle->getDataFolder() . "languages/${language}.yml", Config::YAML);
+        $this->pickle->lang = new Config($this->pickle->getDataFolder() . "languages/{$language}.yml", Config::YAML);
         $this->pickle->lang->save();
         $this->pickle->getLogger()->info($this->translateLang("language-selected"));
     }

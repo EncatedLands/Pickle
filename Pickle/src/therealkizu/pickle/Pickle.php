@@ -38,12 +38,6 @@ class Pickle extends PluginBase {
         if (!is_file($this->getDataFolder() . "config.yml")) {
             $this->saveResource("config.yml");
         }
-
-        foreach ($this->getResources() as $resource) {
-            $this->saveResource($resource->getFilename());
-        }
-
-        $this->saveDefaultConfig();
     }
 
     public function onEnable() {
