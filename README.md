@@ -32,6 +32,10 @@
 
 * If you are a developer and want to add a new feature or a bug fix for the plugin, please read [CONTRIBUTING.md](CONTRIBUTING.md) before requesting a pull request to us.
 
+<!-- CREDIT -->
+## ⇁ Credits
+* Thanks [@TrackRunny](https://github.com/TrackRunny) for the README design.
+
 <!-- LICENSE -->
 ## ⇁ License
 
